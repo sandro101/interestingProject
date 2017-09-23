@@ -12,10 +12,15 @@ def read_data(identifier):
         data = json.load(mockData)
         return list(filter(lambda item: item['id'] == identifier, data))
     
+
+def append_id(data, item):
+        item['id'] = len(data) + 1
+        return item
+
 def write_data(item):   
     with open(get_data_location()) as mockDataRead: 
         data = json.load(mockDataRead)
-        item['id'] = len(data) + 1
+        item = append_id(data, item)
         data.insert(item['id'], item);
     with open(get_data_location(), 'w') as mockDataWrite:      
         mockDataWrite.write(json.dumps(data))   
