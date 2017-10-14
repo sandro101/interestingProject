@@ -1,18 +1,1 @@
-[
-    {
-        "data": "interesting data",
-        "id": 1
-    },
-    {
-        "data": "more interesting data",
-        "id": 2
-    },
-    {
-        "data": "maybe the most intere",
-        "id": 3
-    },
-    {
-        "data": "wow i cannot believe it is that interesting",
-        "id": 4
-    }
-]
+[{"data": "interesting data", "id": 1}, {"data": "more interesting data", "id": 2}, {"data": "maybe the most intere", "id": 3}, {"data": "wow i cannot believe it is that interesting", "id": 4}, {"data": "Look a lobster 3", "id": 5}, {"data": "Look a lobster 3", "id": 6}, {"id": 7, "data": "Look a lobster 7"}]
