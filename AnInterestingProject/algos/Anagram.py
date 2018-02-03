@@ -1,4 +1,4 @@
-#In reality just sort both strings and then check they are equal
+# In reality just sort both strings and then check they are equal
 class Anagram:
     def isAnagram(self, the_string, anagram):
         if len(the_string) != len(anagram): return False
@@ -9,10 +9,10 @@ class Anagram:
                 anagram.remove(letter)
             except ValueError:
                 return False
-        return True;
-             
-print(Anagram().isAnagram('a', 'a'));
-print(Anagram().isAnagram('a', 'ab'));
-print(Anagram().isAnagram('ba', 'ab'));
-print(Anagram().isAnagram('aa', 'ab'));
+        return True
 
+
+print(Anagram().isAnagram('a', 'a'))
+print(Anagram().isAnagram('a', 'ab'))
+print(Anagram().isAnagram('ba', 'ab'))
+print(Anagram().isAnagram('aa', 'ab'))

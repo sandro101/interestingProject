@@ -1,9 +1,9 @@
 df = pd.merge(
-    dfh, 
-    dfa, 
-    how='outer', 
-    left_on=['HomeTeam'], 
-    right_on=['AwayTeam'], 
+    dfh,
+    dfa,
+    how='outer',
+    left_on=['HomeTeam'],
+    right_on=['AwayTeam'],
     suffixes=('_H', '_A')
 )
 
