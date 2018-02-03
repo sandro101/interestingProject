@@ -15,5 +15,6 @@ def get_data(data_id):
 def put_data():
     DAO.write_data(RequestHelper.parse_request(request))    
     return jsonify({'response': True})
+
 if __name__ == '__main__':
     myApp.run(debug=True)
