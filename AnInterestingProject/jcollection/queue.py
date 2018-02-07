@@ -21,10 +21,6 @@ class Queue:  # FIFO
     def pop(self):
         if self.head is None:
             raise ValueError("Nothing in the qeueue")
-        # just take the top node off and then set the current
-        # set the data = data from next node
-        # set the next_node = the third node
-        # this makes first node into the second node and removes the first
         to_pop = self.head.data
         if self.head.next_node is not None:
             self.head.data = self.head.next_node.data

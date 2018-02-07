@@ -3,6 +3,7 @@ from AnInterestingProject.jcollection.node import Node
 
 class Stack: # LIFO
     head = None
+    min_value = None
 
     def __init__(self, data=None):
         if data is not None:
@@ -19,10 +20,6 @@ class Stack: # LIFO
     def pop(self):
         if self.head is None:
             raise ValueError("Nothing in the stack")
-        # just take the top node off and then set the current
-        # set the data = data from next node
-        # set the next_node = the third node
-        # this makes first node into the second node and removes the first
         to_pop = self.head.data
         if self.head.next_node is not None:
             self.head.data = self.head.next_node.data
