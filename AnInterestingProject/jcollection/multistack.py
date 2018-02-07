@@ -2,9 +2,9 @@ from AnInterestingProject.jcollection.node import Node
 
 
 class MultiStack:  # LIFO
-    stacks = [None, None, None]
     def __init__(self, data=None, stack_no=None):
         if (data is not None) & (stack_no is not None):
+            self.stacks = [None, None, None]
             self.stacks[stack_no] = Node(data)
 
     def push_at(self, data, stack_no):

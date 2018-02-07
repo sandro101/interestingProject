@@ -2,8 +2,6 @@ from AnInterestingProject.jcollection.node import Node
 
 
 class Stack: # LIFO
-    head = None
-    min_value = None
 
     def __init__(self, data=None):
         if data is not None:

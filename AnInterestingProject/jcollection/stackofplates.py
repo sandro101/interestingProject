@@ -2,7 +2,6 @@ from AnInterestingProject.jcollection.node import Node
 
 
 class StackOfPlates:  # LIFO
-    stacks = [None]
     __stack_capacity = 2
 
     def __init__(self, data=None):

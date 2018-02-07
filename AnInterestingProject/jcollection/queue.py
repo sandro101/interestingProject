@@ -2,7 +2,6 @@ from AnInterestingProject.jcollection.node import Node
 
 
 class Queue:  # FIFO
-    head = None
 
     def __init__(self, data=None):
         if data is not None:
