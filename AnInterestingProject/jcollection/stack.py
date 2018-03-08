@@ -4,8 +4,15 @@ from AnInterestingProject.jcollection.node import Node
 class Stack: # LIFO
 
     def __init__(self, data=None):
+        self.head = None
         if data is not None:
             self.head = Node(data)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.__dict__ == other.__dict__
+        else:
+            return False
 
     def push(self, data):
         if self.head is None:
@@ -25,3 +32,9 @@ class Stack: # LIFO
         else:
             self.head = None
         return to_pop
+
+    def peek(self):
+        if self.head is None:
+            return None
+        else:
+            return self.head.data
