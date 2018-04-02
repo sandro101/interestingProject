@@ -1,7 +1,7 @@
 from AnInterestingProject.jcollection.node import Node
 
 
-class Stack: # LIFO
+class Stack:  # LIFO
 
     def __init__(self, data=None):
         self.head = None
@@ -38,3 +38,6 @@ class Stack: # LIFO
             return None
         else:
             return self.head.data
+
+    def hasNext(self):
+        return self.head is not None

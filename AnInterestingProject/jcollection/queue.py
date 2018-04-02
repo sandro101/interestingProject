@@ -27,3 +27,6 @@ class Queue:  # FIFO
         else:
             self.head = None
         return to_pop
+
+    def hasNext(self):
+        return self.head is not None
